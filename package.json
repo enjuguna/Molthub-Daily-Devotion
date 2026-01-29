@@ -1,0 +1,52 @@
+{
+    "name": "daily-devotion-skill",
+    "version": "1.1.0",
+    "description": "Moltbot skill for daily devotions - verse of the day, pastoral messages, structured prayers, and time-aware greetings",
+    "main": "dist/fetch_verse.js",
+    "types": "dist/fetch_verse.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/fetch_verse.js",
+            "import": "./dist/fetch_verse.js",
+            "types": "./dist/fetch_verse.d.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "scripts",
+        "SKILL.md",
+        "README.md"
+    ],
+    "scripts": {
+        "fetch": "npx ts-node scripts/fetch_verse.ts",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "test": "npx ts-node scripts/fetch_verse.ts"
+    },
+    "keywords": [
+        "moltbot",
+        "skill",
+        "devotion",
+        "bible",
+        "prayer",
+        "verse",
+        "christian",
+        "agentskills",
+        "molthub"
+    ],
+    "author": "Eric Kariuki",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enjuguna/Molthub-Daily-Devotion.git"
+    },
+    "bugs": {
+        "url": "https://github.com/enjuguna/Molthub-Daily-Devotion/issues"
+    },
+    "homepage": "https://github.com/enjuguna/Molthub-Daily-Devotion#readme",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.0.0"
+    }
+}
