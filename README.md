@@ -54,11 +54,12 @@ Simply ask Moltbot for your daily devotion:
 ```
 
 ### With Prayer Requests
-You can include specific prayer requests:
+Include specific prayer requests in your initial prompt:
 
 ```
 "Give me my daily devotion. Please pray for my upcoming job interview."
 "Daily devotion please - include prayers for my family's health."
+"Morning devotion with prayers for wisdom in my career decision."
 ```
 
 ## Helper Scripts
